@@ -1,0 +1,15 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-ul{
+    list-style-type:none;
+    display:flex;
+    color: blue;
+}
+
+#header-ul li{
+    padding-left: 1rem;
+}
+
