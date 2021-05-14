@@ -1,15 +1,55 @@
+@font-face {
+    font-family: "relaway";
+    src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: relaway,serif;
+}
 header{
     display: flex;
     justify-content: space-between;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+.header-active{
+    border-top: 2px solid #0065FC;
+}
+.header-register{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+.header-active a{
+    color:#0065FC;
+
 }
 
 .header-ul{
     list-style-type:none;
     display:flex;
-    color: blue;
 }
 
-#header-ul li{
-    padding-left: 1rem;
+.header-ul li{
+    padding: 2rem;
 }
 
+.h1-index{
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 0,5rem;
+}
+div{
+    display: flex;
+    padding: 1rem;
+}
