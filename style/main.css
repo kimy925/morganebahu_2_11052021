@@ -49,5 +49,6 @@ header a{
 }
 .filter{
     display: flex;
+    padding: 15px;
     align-items: baseline;
-}
+   
