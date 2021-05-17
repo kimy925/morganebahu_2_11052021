@@ -53,12 +53,6 @@ header a{
    height: 2rem;
    width: 20rem;
 }
-.bouton{
-    background-color: blue;
-    color: white;
-}
-  
-
 #filter{
    display: flex;
    align-items: baseline;
