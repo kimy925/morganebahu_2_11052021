@@ -47,8 +47,10 @@ header a{
     font-weight: bolder;
     padding: 0,5rem;
 }
-.filter{
-    display: flex;
-    padding: 15px;
-    align-items: baseline;
-   
+#filter{
+   display: flex;
+   align-items: baseline;
+}
+.block-filter{
+    padding-left: 3rem;
+}
