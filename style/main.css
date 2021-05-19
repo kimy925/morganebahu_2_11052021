@@ -1,13 +1,11 @@
-@font-face {
+@font-face{
     font-family: "relaway";
     src: url("../fonts/Raleway-Regular.ttf") format("truetype");
 }
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
 body{
     padding-left: 1rem;
@@ -47,20 +45,72 @@ header a{
     font-weight: bolder;
     padding: 0,5rem;
 }
+.search-button{
+    display: flex;
+    margin: 2rem 0;
+}
+.search-button button,.search-button input{
+    height: 2rem;
+}
+.find{
+    background-color: blue;
+    color: white;
+    border-bottom-left-radius: 15rem;
+    border-top-left-radius: 15rem;
+}
 .search{
    border-radius: 10px;
-   margin-top: 1rem;
    height: 2rem;
-   width: 20rem;
+   border-top-right-radius: 0%;
+   border-bottom-right-radius: 0%;
 }
 #filter{
    display: flex;
    align-items: baseline;
-}
+}   
 .block-filter{
-    padding-left: 5rem;
-    margin-top: 1rem;
     border:solid 1px gray;
     border-radius: 15rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    padding-right: 1rem;
+    border-left: 0;
+}    
+.logo-eco{
+    background-color: #DEEBFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+}
+.logo-fam{
+    background-color: #DEEBFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+}
+.logo-rom{
+    background-color: #DEEBFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+}
+.logo-anim{
+    background-color: #DEEBFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
 }
