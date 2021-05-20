@@ -53,16 +53,30 @@ header a{
     height: 2rem;
 }
 .find{
-    background-color: blue;
+    background-color:#0065FC ;
     color: white;
-    border-bottom-left-radius: 15rem;
-    border-top-left-radius: 15rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-left: 0;
+    border: none;
+}
+.mark{
+    border-color:#F2F2F2 ;
+    border-right: 0;
+    background-color: #F2F2F2;
+    border-top-left-radius: 0.5px;
+    border-bottom-left-radius: 0.5px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .search{
-   border-radius: 10px;
-   height: 2rem;
+   height: 4rem;
    border-top-right-radius: 0%;
    border-bottom-right-radius: 0%;
+   border-right: 0;
+   border-left: 0;
+   border: solid #F2F2F2 0.25px;
+   padding-left: 1rem;
 }
 #filter{
    display: flex;
@@ -78,7 +92,7 @@ header a{
     padding-right: 1rem;
     border-left: 0;
 }    
-.logo-eco{
+.logo-filter{
     background-color: #DEEBFF;
     display: flex;
     align-items: center;
@@ -86,34 +100,21 @@ header a{
     height: 2rem;
     width: 2rem;
     border-radius: 100%;
-}
-.logo-fam{
-    background-color: #DEEBFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    width: 2rem;
-    border-radius: 100%;
-}
-.logo-rom{
-    background-color: #DEEBFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    width: 2rem;
-    border-radius: 100%;
-}
-.logo-anim{
-    background-color: #DEEBFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    width: 2rem;
-    border-radius: 100%;
+    color: #0065FC;
 }
 .info{
     display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.info div{
+    border: solid #F2F2F2 0.5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    color: #0065FC;
+    margin-right: 0.25rem;
 }
