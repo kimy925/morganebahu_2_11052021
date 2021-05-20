@@ -114,3 +114,6 @@ header a{
     width: 2rem;
     border-radius: 100%;
 }
+.info{
+    display: flex;
+}
