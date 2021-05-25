@@ -34,9 +34,8 @@ header a{
 
 .header-ul{
     list-style-type:none;
-    display:flex;
-}
-
+    display: flex
+}    
 .header-ul li{
     padding: 2rem;
 }
@@ -64,8 +63,8 @@ header a{
     border-color:#F2F2F2 ;
     border-right: 0;
     background-color: #F2F2F2;
-    border-top-left-radius: 0.5px;
-    border-bottom-left-radius: 0.5px;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
@@ -83,7 +82,7 @@ header a{
    align-items: baseline;
 }   
 .block-filter{
-    border:solid 1px gray;
+    border:solid #F2F2F2;
     border-radius: 15rem;
     font-weight: bold;
     display: flex;
@@ -118,3 +117,29 @@ header a{
     color: #0065FC;
     margin-right: 0.25rem;
 }
+.bed{
+    height: 100px;
+    width: 175px;
+    border-radius: 1rem;
+}
+.hotel{
+    border: solid white;
+    border-radius: 1rem;
+    background-color: white;
+    float: left;
+}
+.first{
+    background-color:#F2F2F2;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.second{
+    background-color: #F2F2F2;
+    border-radius: 1rem;
+}
+.bedroom{
+    height: 50px;
+    width: 50px;
+    border: solid white;
+    border-radius: 1rem;
+}    
