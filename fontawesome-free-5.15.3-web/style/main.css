@@ -1,0 +1,147 @@
+@font-face{
+    font-family: "relaway";
+    src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: relaway,serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+.header-active{
+    border-top: 2px solid #0065FC;
+}
+.header-register a{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+.header-active a{
+    color:#0065FC;
+}
+
+.header-ul{
+    list-style-type:none;
+    display: flex
+}    
+.header-ul li{
+    padding: 2rem;
+}
+.h1-index{
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 0,5rem;
+}
+.search-button{
+    display: flex;
+    margin: 2rem 0;
+}
+.search-button button,.search-button input{
+    height: 2rem;
+}
+.find{
+    background-color:#0065FC ;
+    color: white;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-left: 0;
+    border: none;
+}
+.mark{
+    border-color:#F2F2F2 ;
+    border-right: 0;
+    background-color: #F2F2F2;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.search{
+   height: 4rem;
+   border-top-right-radius: 0%;
+   border-bottom-right-radius: 0%;
+   border-right: 0;
+   border-left: 0;
+   border: solid #F2F2F2 0.25px;
+   padding-left: 1rem;
+}
+#filter{
+   display: flex;
+   align-items: baseline;
+}   
+.block-filter{
+    border:solid #F2F2F2;
+    border-radius: 15rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    padding-right: 1rem;
+    border-left: 0;
+}    
+.logo-filter{
+    background-color: #DEEBFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    color: #0065FC;
+}
+.info{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.info div{
+    border: solid #F2F2F2 0.5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    color: #0065FC;
+    margin-right: 0.25rem;
+}
+.bed{
+    height: 100px;
+    width: 175px;
+    border-radius: 1rem;
+}
+.hotel{
+    border: solid white;
+    border-radius: 1rem;
+    background-color: white;
+    float: left;
+}
+.first{
+    background-color:#F2F2F2;
+    border-radius: 1rem;
+    float: right;
+    padding: 1rem;
+}
+.second{
+    background-color: #F2F2F2;
+    float: right;
+    border-radius: 1rem;
+}
+.bedroom{
+    height: 50px;
+    width: 50px;
+    border: solid white;
+    border-radius: 1rem;
+}    
