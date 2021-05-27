@@ -158,4 +158,5 @@ header a{
     background-color: white;
     border-color: white;
     border-radius: 1rem;
+    display: flex;
 }
