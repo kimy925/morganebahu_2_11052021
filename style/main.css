@@ -98,7 +98,7 @@ header a{
     justify-content: center;
     height: 2rem;
     width: 2rem;
-    border-radius: 100%;
+    border-radius: 100px;
     color: #0065FC;
 }
 .info{
@@ -113,13 +113,13 @@ header a{
     justify-content: center;
     height: 2rem;
     width: 2rem;
-    border-radius: 100%;
+    border-radius: 100px;
     color: #0065FC;
     margin-right: 0.25rem;
 }
 .bed{
     height: 175px;
-    width: 100%;
+    width: 100px;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
@@ -164,4 +164,22 @@ header a{
     border-color: white;
     border-radius: 1rem;
     display: flex;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    width: 50%;
+}
+.vieu-port{
+    display: grid;
+}
+.marseille{
+    display: grid;
+}
+.monument{
+    display: grid;
+}
+.plage{
+    display: grid;
 }
