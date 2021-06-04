@@ -20,12 +20,12 @@ header a{
     text-decoration: none;
     color: black;
 }
-.header-active{
-    border-top: 2px solid #0065FC;
-}
 .header-register a{
     color: #0065FC;
     font-weight: bold;
+}
+.header-ul li:hover{
+    border-top:2px solid #0065FC ;
 }
 
 .header-active a{
@@ -38,6 +38,7 @@ header a{
 }    
 .header-ul li{
     padding: 2rem;
+    border-top: 2px solid transparent;
 }
 .h1-index{
     font-size: 1rem;
@@ -49,57 +50,63 @@ header a{
     margin: 2rem 0;
 }
 .search-button button,.search-button input{
-    height: 2rem;
+    height: 2.5rem;
 }
 .find{
     background-color:#0065FC ;
     color: white;
     border-bottom-right-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-    border-left: 0;
-    border: none;
+    border: 1px solid #0065fc;
+    padding: 0 1rem;
 }
 .mark{
-    border-color:#F2F2F2 ;
+    height: 2.5rem;
+    border: 1px solid #F2F2F2 ;
     border-right: 0;
     background-color: #F2F2F2;
-    border-top-left-radius: 1px;
-    border-bottom-left-radius: 1px;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
 .search{
-   height: 4rem;
+   height: 2.5rem;
    border-top-right-radius: 0%;
    border-bottom-right-radius: 0%;
-   border-right: 0;
-   border-left: 0;
-   border: solid #F2F2F2 0.25px;
-   padding-left: 1rem;
+   border: 1px solid #F2F2F2;
+   padding: 1rem;
+   border: 1px solid #F2F2F2;
 }
 #filter{
    display: flex;
    align-items: baseline;
 }   
 .block-filter{
-    border:solid #F2F2F2;
+    border: 1px solid #F2F2F2;
     border-radius: 15rem;
     font-weight: bold;
     display: flex;
     align-items: center;
     margin-left: 1rem;
-    padding-right: 1rem;
     border-left: 0;
 }    
+.block-filter:hover{
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
 .logo-filter{
     background-color: #DEEBFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 100px;
     color: #0065FC;
+}
+.block-filter span{
+    padding: 0 1.5rem;
 }
 .info{
     display: flex;
@@ -115,41 +122,54 @@ header a{
     width: 2rem;
     border-radius: 100px;
     color: #0065FC;
-    margin-right: 0.25rem;
+    margin-right: 1rem;
+}
+.first h2,.chart{
+    padding: 2rem 0 0 2rem;
 }
 .bed{
     height: 175px;
-    width: 100px;
+    width: 100%;
+    object-fit: cover;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    object-fit: cover;
 }
 .hotel{
     border: solid white;
     border-radius: 1rem;
     background-color: white;
-    flex-basis: 450px;
+    flex-basis: 350px;
     margin: 1rem;
 }
 .hotels{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+.booking-title{
+    font-weight: bold;
 }
 .first{
     background-color:#F2F2F2;
     border-radius: 1rem;
-    flex-grow: 2;
     margin: 1rem;
+    width: 70%;
+    padding-bottom: 1rem;
 }
 .second{
     background-color: #F2F2F2;
     border-radius: 1rem;
     flex-direction: column;
     margin: 1rem;
-    flex-basis: 700px;
+    width: 30%;
+    padding-left:1rem ;
+    padding-right: 1rem;
 }
 .bedroom{
-    width: 230px;
+    width: 50%;
     height: 150px;
+    object-fit: cover;
     border-radius: 1rem;
     margin-left: 0.5rem;
 }    
@@ -157,6 +177,9 @@ header a{
     display: flex;
 }
 .etoile{
+    color: #F2F2F2 ;
+}
+.etoile.active{
     color:#0065FC ;
 }
 .room{
@@ -164,22 +187,62 @@ header a{
     border-color: white;
     border-radius: 1rem;
     display: flex;
+    margin-top: 2rem;
 }
 .option{
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
     width: 50%;
+    padding: 1rem;
+}
+.chart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem !important;
+}
+.sud{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    
+}
+.sud img{
+    width: 100%;
+
 }
 .vieu-port{
-    display: grid;
-}
-.marseille{
-    display: grid;
-}
-.monument{
-    display: grid;
+    grid-column-start: 1;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    padding: 1rem;
+    border-radius: 1rem;
+
 }
 .plage{
+    grid-column-start: 2;
     display: grid;
+    grid-template-columns: 100%;
+    height: 500px;
+    grid-template-rows: 60% 40%;
+    padding: 1rem;
+    border-radius: 1rem;
+}    
+.marseille{
+   grid-column-start: 3;
+   padding: 1rem;
+   border-radius: 1rem;
+}
+.monument{
+    grid-column-start: 4;
+    display: grid;
+    grid-template-columns: 100%;
+    height: 500px;
+    grid-template-rows: 40% 60%;
+    padding: 1rem;
+    border-radius: 1rem;
 }
