@@ -2,10 +2,16 @@
 <!DOCTYPE html>
 <html lang="fr"> 
     <head> 
+        <meta
+            name="viewport"
+            content="width=advice-width, initial-scale=1, minimum -scale=1"
+        />    
         <meta charset="utf-8"/>
         <title>Reservia</title> 
         <link rel="stylesheet"href="./style/font-awesome.css">
         <link rel="stylesheet"href="./style/main.css">
+        <link rel="stylesheet"href="./style/tablet.css" media="screen and (max-widht: 1024px)"/>
+        <link rel="stylesheet"href="./style/mobile.css" media="screen and (max-widht: 760px)"/>
     </head>
     <body> 
         <header>
@@ -26,7 +32,8 @@
             <input class="search" type="text" value="Marseille,France" size="30"  >
             <button class="find">Rechercher</button>
         </div>
-        <div id="filter"><p>Filtres</p>
+        <div id="filter">
+            <p>Filtres</p>
             <div class="block-filter">
                 <div class="logo-filter">
                     <i class="fas fa-money-bill-wave-alt"></i>
@@ -183,42 +190,65 @@
     </section>    
     <section>
         <class="activités">
-            <p>Activités à Marseille</p>
+            <div class="third">Activités à Marseille</div>
                   <div class="sud">
                       <div class="vieu-port">
-                      <div class activity-title>
+                      <div class="activity-title">
                          <img src="./image/activities/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-                        <p>Vieu port</p>
+                        <div>Vieu port</div>
                      </div>
                      </div>
                   <div class="plage">
-                     <div class activity-title>
+                     <div class="activity-title">
                        <img class="est" src="./image/activities/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-                       <p>Fort de pomègues</p> 
+                       <div>Fort de pomègues</div> 
                      </div>
-                     <div class activity-title>
+                     <div class="activity-title">
                         <img class="ouest" src="./image/activities/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-                        <p>Îles de frioul</p>
+                        <div>Îles de frioul</div>
                      </div>
                   </div>
                   <div class="marseille">
-                     <div class activity-title>
+                     <div class="activity-title">
                         <img src="./image/activities/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
-                        <p>Parc national des calanques</p>
+                        <div>Parc national des calanques</div>
                      </div>
                   </div>
                   <div class="monuments">
-                     <div class activity-title>
+                     <div class="activity-title">
                         <img class="nord" src="./image/activities/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-                        <p>Notre-dame-de-la-garde</p>
+                        <div>Notre-dame-de-la-garde</div>
                      </div>
-                     <div class activity-title>
+                     <div class="activity-title">
                          <img class="mer" src="./image/activities/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-                        <p>Parc Longchamps</p>
+                        <div>Parc Longchamps</div>
                      </div>
                 </div>
             </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="a_propos">
+            <h5>A propos</h5>
+            <ul>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+        </div>
+        <div class="nos_hebergements">
+            <h5>Nos hébèrgements</h5>
+            <ul>
+                <li><a href="#">Charte de qualité</a></li>
+                <li><a href="#">Soumettre votre hôtel</a></li>
+            </ul>
+        </div>
+        <div class="assistance">
+            <h5>Assistance</h5>
+            <ul>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </div>
+    </footer>
     </body>
 </html>        
