@@ -12,9 +12,14 @@ body{
     padding-right: 1rem;
     font-family: relaway,serif;
 }
+header, main{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 header a{
     text-decoration: none;
@@ -24,14 +29,16 @@ header a{
     color: #0065FC;
     font-weight: bold;
 }
+.header-register-mobile
 .header-ul li:hover{
     border-top:2px solid #0065FC ;
 }
-
-.header-active a{
-    color:#0065FC;
+.header-register-mobile{
+    display: none;
 }
-
+.header-ul li:hover a{
+    color: #0065FC;
+}
 .header-ul{
     list-style-type:none;
     display: flex
@@ -60,6 +67,9 @@ header a{
     border: 1px solid #0065fc;
     padding: 0 1rem;
 }
+.findicon{
+    display: none;
+}
 .mark{
     height: 2.5rem;
     border: 1px solid #F2F2F2 ;
@@ -81,7 +91,13 @@ header a{
 #filter{
    display: flex;
    align-items: baseline;
+   flex-wrap: wrap;
 }   
+.filter-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .block-filter{
     border: 1px solid #F2F2F2;
     border-radius: 15rem;
@@ -152,16 +168,16 @@ header a{
 }
 .first{
     background-color:#F2F2F2;
-    border-radius: 1rem;
-    margin: 1rem;
+    border-radius: 1rem 1rem 1rem 0;
+    margin: 1rem 1rem 1rem 0;
     width: 70%;
     padding-bottom: 1rem;
 }
 .second{
     background-color: #F2F2F2;
-    border-radius: 1rem;
+    border-radius: 1rem 0 1rem 1rem;
     flex-direction: column;
-    margin: 1rem;
+    margin: 1rem 0 1rem 1rem;
     width: 30%;
     padding-left:1rem ;
     padding-right: 1rem;
@@ -276,6 +292,7 @@ footer{
     background-color: #F2F2F2;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    margin-top: 3rem;
 }
 footer ul{
     list-style-type: none;

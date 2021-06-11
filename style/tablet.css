@@ -1,0 +1,35 @@
+.search-button{
+    margin: 2rem 0 1rem 0;
+}
+#filter{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.block-filter{
+    margin-top: 1rem;
+}
+.hebergements{
+    flex-direction: column-reverse;
+}
+.first, .second {
+    width: 100%;
+    padding: 1rem;
+}
+.first{
+    margin-right: 0;
+}
+.second{
+    margin-left: 0;
+}
+.hotel{
+    flex-basis: unset;
+}
+footer{
+    flex-direction: column;
+}
+footer ul, footer h5{
+    text-align: center;
+}
+.a_propos, .nos_hebergements, .assistance{
+    margin: 0;
+}
