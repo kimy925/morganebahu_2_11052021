@@ -33,3 +33,47 @@ footer ul, footer h5{
 .a_propos, .nos_hebergements, .assistance{
     margin: 0;
 }
+.sud{
+    height: unset;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+    grid-template-areas: 
+          "vieu-port"
+          "plage"
+          "marseille"
+          "monuments";
+    height: unset;
+}
+.vieu-port{
+    grid-area: vieu-port;
+}
+.plage {
+    grid-area: plage;
+    grid-row-start:unset ;
+    display:block;
+    height: unset;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+}
+.marseille{
+    grid-column-start: unset;
+    grid-area: marseille;
+}
+.monuments{
+    grid-column-start: unset;
+    display: block;
+    height: unset;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+    grid-area: monuments;
+}
+.activity-title{
+    height: 350px;
+}
+.vieu-port img, .marseille img, .est, .mer, .ouest, .nord{
+    height: 84%;
+}
+.search{
+    max-width: 275px;
+    width: 100%;
+}

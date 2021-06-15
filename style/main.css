@@ -29,7 +29,6 @@ header a{
     color: #0065FC;
     font-weight: bold;
 }
-.header-register-mobile
 .header-ul li:hover{
     border-top:2px solid #0065FC ;
 }
@@ -41,7 +40,8 @@ header a{
 }
 .header-ul{
     list-style-type:none;
-    display: flex
+    display:flex
+
 }    
 .header-ul li{
     padding: 2rem;
@@ -143,6 +143,9 @@ header a{
 .first h2,.chart{
     padding: 2rem 0 0 2rem;
 }
+.hebergements{
+    display: flex;
+}
 .bed{
     height: 175px;
     width: 100%;
@@ -189,9 +192,6 @@ header a{
     border-radius: 1rem;
     margin-left: 0.5rem;
 }    
-.hebergements{
-    display: flex;
-}
 .etoile{
     color: #F2F2F2 ;
 }
