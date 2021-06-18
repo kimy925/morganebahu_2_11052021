@@ -1,9 +1,6 @@
-.findicon{
-    display: block;
-}
-.findword{
-    display: none;
-}
+/**************************
+HEADER
+**************************/
 .header-register-mobile{
     display: block;
 }
@@ -26,9 +23,66 @@ nav{
     border-bottom:2px solid #0065FC ;
     border-top: none;
 }
+/**************************
+SECTION SEARCH
+**************************/
 .search{
     width: 100%;
 }
+.findicon{
+    display: block;
+}
+.findword{
+    display: none;
+}
+/**************************
+SECTION HEBERGEMENTS
+**************************/
 .room-option {
     font-size: 0.7rem;
+}
+.hotel{
+    flex-basis: unset;
+}
+.popular-container {
+    flex-direction: column;
+}
+.room {
+    width: unset;
+    margin: 2rem 0 0 0;
+}
+/**************************
+SECTION ACTIVITES
+**************************/
+.sud{
+    display: grid;
+    height: unset;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+          "vieu-port"
+          "plage-est"
+          "plage-ouest"
+          "marseille"
+          "monuments-nord"
+          "monuments-mer";
+}
+.activity-title{
+    height: 350px;
+}
+.vieu-port img, .marseille img, .plage-est img, .monuments-mer img, .plage-ouest img, .monuments-nord img {
+    height: 84%;
+}
+.search{
+    max-width: 275px;
+    width: 100%;
+}
+footer{
+    flex-direction: column;
+}
+footer ul, footer h5{
+    text-align: center;
+}
+.a_propos, .nos_hebergements, .assistance{
+    margin: 0;
 }

@@ -12,6 +12,9 @@ body{
     padding-right: 1rem;
     font-family: relaway,serif;
 }
+/**************************
+HEADER
+**************************/
 header, main{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -47,6 +50,9 @@ header a{
     padding: 2rem;
     border-top: 2px solid transparent;
 }
+/**************************
+SECTION SEARCH
+**************************/
 .h1-index{
     font-size: 1rem;
     font-weight: bolder;
@@ -140,6 +146,9 @@ header a{
     color: #0065FC;
     margin-right: 1rem;
 }
+/**************************
+HEBERGEMENTS
+**************************/
 .first h2,.chart{
     padding: 2rem 0 0 2rem;
 }
@@ -178,8 +187,9 @@ header a{
 }
 .second{
     background-color: #F2F2F2;
-    border-radius: 1rem 0 1rem 1rem;
+    border-radius: 1rem;
     flex-direction: column;
+    display: flex;
     margin: 1rem 0 1rem 1rem;
     width: 30%;
     padding-left:1rem ;
@@ -189,8 +199,7 @@ header a{
     width: 50%;
     height: 150px;
     object-fit: cover;
-    border-radius: 1rem;
-    margin-left: 0.5rem;
+    border-radius: 1rem 0 0 1rem;
 }    
 .etoile{
     color: #F2F2F2 ;
@@ -203,7 +212,8 @@ header a{
     border-color: white;
     border-radius: 1rem;
     display: flex;
-    margin-top: 2rem;
+    margin: 2rem 0 0 0;
+    width: unset;
 }
 .option{
     display: flex;
@@ -218,6 +228,9 @@ header a{
     align-items: center;
     padding-right: 2rem !important;
 }
+/**************************
+ACTIVITES
+**************************/
 .third{
     font-weight: bold;
     font-size: 1.5rem;
@@ -225,51 +238,44 @@ header a{
 }
 .sud{
     width: 100%;
-    height: 550px;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 275px 275px;
+    grid-template-areas: 
+            "vieu-port plage-est marseille monuments-nord"
+            "vieu-port plage-ouest marseille monuments-mer";
 }
 .sud img{
     width: 100%;
     object-fit: cover;
     border-radius: 2rem 2rem 0 0;
 }
-.vieu-port{
-    grid-column-start: 1;
-    padding: 1rem; 
-}
-.vieu-port img, .marseille img{
-    height: 89%;
-}
-.est, .mer{
-    height: 80%;
-}
-.ouest, .nord{
-    height: 70%;
-}
-.plage{
-    grid-column-start: 2;
-    display: grid;
-    grid-template-columns: 100%;
-    height: 500px;
-    grid-template-rows: 60% 40%;
-    border-radius: 1rem;
+.sud > div {
     padding: 1rem;
+}
+.vieu-port {
+    grid-area: vieu-port;
+}
+.plage-est {
+    grid-area: plage-est;
+}
+.plage-ouest {
+    grid-area: plage-ouest;
 }
 .marseille{
-   grid-column-start: 3;
-   padding: 1rem;
-   border-radius: 1rem;
+    grid-area: marseille;
 }
-.monuments{
-    grid-column-start: 4;
-    display: grid;
-    grid-template-columns: 100%;
-    height: 500px;
-    grid-template-rows: 40% 60%;
-    padding: 1rem;
-    border-radius: 1rem;
+.monuments-nord {
+    grid-area: monuments-nord;
+}
+.monuments-mer {
+    grid-area: monuments-mer;
+}
+.vieu-port img, .marseille img {
+    height: 89%;
+}
+.plage-ouest img, .plage-est img, .monuments-nord img, .monuments-mer img {
+    height: 77%;
 }
 .monuments .activity-title:nth-child(2), .plage .activity-title:nth-child(2){
     margin-top: 3rem;
@@ -287,6 +293,9 @@ header a{
     align-items: center;
     height: 50px ;
 }
+/**************************
+FOOTER
+**************************/
 footer{
     display: flex;
     background-color: #F2F2F2;
